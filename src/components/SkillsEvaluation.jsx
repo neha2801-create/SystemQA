@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiGitBranch } from 'react-icons/fi';
+import Draggable from 'react-draggable';  // Import Draggable component
 
 const SkillsEvaluation = ({ technicalSkills }) => {
   return (
@@ -11,21 +12,23 @@ const SkillsEvaluation = ({ technicalSkills }) => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         {technicalSkills.map((skill, index) => (
-          <div key={index} className="bg-gray-50 p-4 rounded-lg">
-            <div className="flex items-center justify-between mb-2">
-              <div className="flex items-center">
-                {skill.icon}
-                <span className="ml-2 font-medium">{skill.name}</span>
+          <Draggable key={index}>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center">
+                  {skill.icon}
+                  <span className="ml-2 font-medium">{skill.name}</span>
+                </div>
+                <span className="text-sm text-gray-600">{skill.proficiency}%</span>
               </div>
-              <span className="text-sm text-gray-600">{skill.proficiency}%</span>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div 
+                  className="bg-orange-400 h-2 rounded-full" 
+                  style={{ width: `${skill.proficiency}%` }}
+                ></div>
+              </div>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2">
-              <div 
-                className="bg-orange-400 h-2 rounded-full" 
-                style={{ width: `${skill.proficiency}%` }}
-              ></div>
-            </div>
-          </div>
+          </Draggable>
         ))}
       </div>
       
