@@ -1,5 +1,7 @@
 # Amazon Just Walk Out - QA Engineer Assessment Tool
 
+## [Deployed Link](https://neha2801-create.github.io/Amazon_QA_Resume/)
+
 This interactive application helps HR recruiters evaluate candidates for Quality Assurance Engineering positions on the Just Walk Out Technology team.
 
 ## Features
