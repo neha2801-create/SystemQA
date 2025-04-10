@@ -14,7 +14,7 @@ This interactive application helps HR recruiters evaluate candidates for Quality
 
 - React 18
 - Tailwind CSS
-- Lucide React (for icons)
+- React Icons library (react-icons) (for icons)
 - Modern JavaScript (ES6+)
 
 ## Project Structure
