@@ -17,23 +17,6 @@ This interactive application helps HR recruiters evaluate candidates for Quality
 - React Icons library (react-icons) (for icons)
 - Modern JavaScript (ES6+)
 
-## Project Structure
-
-```
-amazon-qa-evaluation-tool/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── JustWalkOutIcon.jsx
-│   │   ├── Confetti.jsx
-│   │   └── ... other components
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.jsx
-│   └── index.css
-├── package.json
-└── tailwind.config.js
-```
 
 ## Getting Started
 
