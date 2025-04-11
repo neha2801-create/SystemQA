@@ -1,0 +1,42 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # Trigger deployment on push to main branch
+  pull_request:
+    branches: [ main ]  # Run workflow for PRs to ensure build works before merging
+  workflow_dispatch:    # Allow manual triggering from the GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code 🛎️
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # You can change this to your preferred Node version
+          cache: 'npm'        # Caches npm dependencies for faster builds
+      
+      - name: Install dependencies 📦
+        run: npm ci  # Uses package-lock.json for exact versions
+      
+      - name: Build React app 🏗️
+        run: |
+          npm run build
+          # The following line is only needed for create-react-app projects
+          # It prevents routing issues with GitHub Pages
+          cp build/index.html build/404.html
+        env:
+          # Add any environment variables your build needs here
+          PUBLIC_URL: /${{https://neha2801-create.github.io/QA_1/}}
+      
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build        # The folder that contains the built React app
+          branch: gh-pages     # The branch the action should deploy to
+          clean: true          # Automatically remove deleted files from the deployment branch
