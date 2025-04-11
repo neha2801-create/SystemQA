@@ -1,7 +1,7 @@
 {
   "name": "amazon",
   "version": "0.1.0",
-  "homepage": "https://neha2801-create.github.io/Amazon_QA_Resume",
+  "homepage": "https://neha2801-create.github.io/Amazon_QA_Resume_Systems",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
