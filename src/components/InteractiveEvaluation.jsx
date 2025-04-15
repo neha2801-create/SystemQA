@@ -24,7 +24,7 @@ const InteractiveEvaluation = ({
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center">
           <FiShoppingCart className="w-6 h-6 text-orange-500 mr-2" />
-          <h2 className="text-xl font-bold text-gray-800">Systems Quality and Performance Engineering - Skill Evaluation</h2>
+          <h2 className="text-xl font-bold text-gray-800">Quality and Performance Engineering - Skill Evaluation</h2>
         </div>
         <button 
           onClick={() => {

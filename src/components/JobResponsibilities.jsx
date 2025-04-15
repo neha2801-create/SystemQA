@@ -91,7 +91,7 @@ const JobResponsibilities = ({ jobResponsibilities, activeSection, setActiveSect
           <h2 className="text-2xl font-bold text-gray-800">Key Responsibilities Assessment</h2>
         </div>
         <p className="text-gray-600 max-w-3xl mx-auto">
-          Review how the candidate's experience aligns with Amazon's Just Walk Out QA Engineering position requirements.
+          Review how the candidate's experience aligns with Amazon's QA Engineering position requirements.
           Click each section to expand details and mark as reviewed when complete.
         </p>
       </div>

@@ -200,7 +200,7 @@ const App = () => {
             <JustWalkOutIcon />
           </div>
           <h1 className="text-3xl font-bold text-gray-800">Candidate Evaluation Tool</h1>
-          <h2 className="text-xl text-orange-600 mt-1">Systems Quality and Performance Engineering - QA Engineer</h2>
+          <h2 className="text-xl text-orange-600 mt-1">Quality and Performance Engineering - QA Engineer</h2>
           <p className="text-lg text-gray-600 mt-2">Interactive assessment for candidate: Neha Pathak</p>
           
           <div className="mt-6 max-w-md mx-auto">

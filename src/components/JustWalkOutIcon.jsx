@@ -18,7 +18,7 @@ const JustWalkOutlcom = () => {
 
       {/* Test Plan Document with QA ENGINEER text */}
       <rect x="10" y="90" width="65" height="20" rx="3" fill="#ffffff" stroke="#232f3e" strokeWidth="1.5" />
-      <text x="42.5" y="103" textAnchor="middle" fontSize="7" fill="#232f3e" fontWeight="bold">QA ENGINEER</text>
+      <text x="42.5" y="103" textAnchor="middle" fontSize="7" fill="#232f3e" fontWeight="bold">Defect Analysis</text>
 
       {/* Gear for Systems Engineering */}
       <circle cx="130" cy="95" r="10" fill="#ffffff" stroke="#FF9900" strokeWidth="2" />
@@ -38,7 +38,7 @@ const JustWalkOutlcom = () => {
 
       {/* Title */}
       <text x="80" y="14" textAnchor="middle" fill="#232f3e" fontWeight="bold" fontSize="9">
-        SYSTEMS & PERFORMANCE
+        Quality Assurance
       </text>
     </svg>
   );
